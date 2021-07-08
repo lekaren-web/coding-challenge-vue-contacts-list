@@ -1,0 +1,23 @@
+{
+  "name": "coding-challenge-vue-contacts-list",
+  "version": "1.0.0",
+  "description": "Our core product is primarily built with Vue, Tailwind CSS, and use of APIs. The goal of this challenge helps us understand how quickly you can pick up unfamilar technologies through documentation, learn how you make decisions, and how you implement some fundementals of Vue (such as creating methods, rendering lists, working with reactivity, etc.).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekaren-web/coding-challenge-vue-contacts-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lekaren-web/coding-challenge-vue-contacts-list/issues"
+  },
+  "homepage": "https://github.com/lekaren-web/coding-challenge-vue-contacts-list#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
