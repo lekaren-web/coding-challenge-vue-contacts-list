@@ -21,13 +21,10 @@ new Vue({ //new vue instance, its created by passiing in an object
   
   },
   removeContact: function(event){
-    
     const message = window.confirm(`Would you like to remove ${this.contacts[event.currentTarget.id].name.first} ${this.contacts[event.currentTarget.id].name.last}`)
     if(message){
-      console.log('delete')
       this.contacts.splice(this.contacts[event.currentTarget.id], 1)
     }
- 
   }
   },
   
