@@ -1,6 +1,6 @@
 new Vue({ //new vue instance, its created by passiing in an object
-  el: '#app', //element property will connect to the div with id app
-  data: {//pass in the data 
+  el: '#app',
+  data: {
     contacts: [],
     isFavorite: false,
   },
