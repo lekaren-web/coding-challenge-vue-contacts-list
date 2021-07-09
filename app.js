@@ -21,10 +21,15 @@ new Vue({ //new vue instance, its created by passiing in an object
   
   },
   removeContact: function(event){
-    const message = window.confirm(`Would you like to remove ${this.contacts[event.currentTarget.id].name.first} ${this.contacts[event.currentTarget.id].name.last}`)
-    if(message){
-      this.contacts.splice(this.contacts[event.currentTarget.id], 1)
-    }
+    let star = document.getElementById(`${event.currentTarget.id}`)
+      star.classList.replace( "text-white", "text-gray-400")
+      star.classList.replace( "bg-yellow-400","hover:bg-yellow-100")
+      star.classList.add( "hover:text-yellow-500");
+      this.isFavorite = false
+      const message = window.confirm(`Would you like to remove ${this.contacts[event.currentTarget.id].name.first} ${this.contacts[event.currentTarget.id].name.last}`)
+      if(message){
+        this.contacts.splice(this.contacts[event.currentTarget.id], 1)
+      }
   }
   },
   
