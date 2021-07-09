@@ -30,13 +30,15 @@
           class="text-blue-600 hover:underline">
           {{contact.email}}
         </a>
+      
+      
       </div>
       <div class="flex items-center ml-4">
-        <button v-on:click="toggleStar" id='star' class="flex items-center justify-center mr-2 rounded-full h-10 w-10 text-gray-400 hover:bg-yellow-100 hover:text-yellow-500">
-          <i class="fas fa-star"></i>
-        </button>
-        <button  class="flex items-center justify-center rounded-full h-10 w-10 text-gray-400 hover:bg-red-50 hover:text-red-600">
-          <i class="fas fa-trash"></i>
+        <button type="button" v-on:click="toggleFavorite" :id="contacts.indexOf(contact)" class="flex items-center justify-center mr-2 rounded-full h-10 w-10 text-gray-400 hover:bg-yellow-100 hover:text-yellow-500 " >
+          <i class="fas fa-star" ></i>
+        </button >
+        <button v-on:click ="removeContact" :id="contacts.indexOf(contact)" class="flex items-center justify-center rounded-full h-10 w-10 text-gray-400 hover:bg-red-50 hover:text-red-600">
+          <i class="fas fa-trash" ></i>
         </button>
       </div>
     </div>

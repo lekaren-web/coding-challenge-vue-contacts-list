@@ -10,14 +10,14 @@ Our core product is primarily built with Vue, Tailwind CSS, and use of APIs. The
 
 ## Functional Specification
 
-1. When the application loads, use the JavaScript [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API to perform a `GET` request from the URL `https://randomuser.me/api/?results=50`.
-2. Render a list from the results using the "contacts item template" provided in `index.html`.
+[ x ]  1. When the application loads, use the JavaScript [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API to perform a `GET` request from the URL `https://randomuser.me/api/?results=50`.
+[ x ]  2. Render a list from the results using the "contacts item template" provided in `index.html`.
 3. Scan the template for static data that can be replaced with variables containing data from the API response.
-4. The "star" icon button:
+[ x ] 4. The "star" icon button:
   * When user clicks, toggle `isFavorite` data property with `boolean` value. Please note that `isFavorite` is not defined in the "contact item" by default.
   * When `isFavorite` is `false`, the button class list should include: `text-gray-400 hover:bg-yellow-100 hover:text-yellow-500`, but not when `isFavorite` is `true`.
   * When `isFavorite` is `true`, the button class list should include: `bg-yellow-400 text-white`, but not when `isFavorite` is `false`.
-5. When user clicks the "trash can" icon button, use the JavaScript [`confirm`](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm) function to prompt user to "confirm" or "cancel" removing the contact from the contact list. If the user confirms, remove the item from the contacts list.
+[ x ] 5. When user clicks the "trash can" icon button, use the JavaScript [`confirm`](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm) function to prompt user to "confirm" or "cancel" removing the contact from the contact list. If the user confirms, remove the item from the contacts list.
 
 ## Example response data:
 
